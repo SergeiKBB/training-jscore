@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<nav class="menu">
+    <ul class="menu__list" id="menu">
+        <li class="menu__item menu__item_active">
+            <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="menu__item">
+            <a href="#contacts">Contacts</a>
+        </li>
+        <li class="menu__item">
+            <a href="#skills">Skills</a>
+        </li>
+        <li class="menu__item">
+            <a href="#education">Education</a>
+        </li>
+    </ul>
+    <svg aria-hidden="true" data-prefix="fas" data-icon="bars" class="menu__burger svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+    </svg>
+    <svg aria-hidden="true" data-prefix="fas" data-icon="times" class="menu__close svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+        <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+    </svg>
+</nav>
+
+<div class="container">
+    <section class="portfolio">
+        <h2 class="portfolio__title title" id="portfolio">Portfolio</h2>
+        <div class="portfolio__list">
+            <li class="portfolio__item checked"><span data-filter="*">All</span></li>
+            <li class="portfolio__item"><span data-filter=".code">Code</span></li>
+            <li class="portfolio__item"><span data-filter=".ui">UI</span></li>
+        </div>
+        <div class="portfolio__grid grid">
+            <img src="img/code.jpg" alt="" class="grid__item code" data-category="code">
+            <img src="img/ui.jpg" alt="" class="grid__item ui" data-category="ui">
+            <img src="img/code.jpg" alt="" class="grid__item code" data-category="code">
+            <img src="img/ui.jpg" alt="" class="grid__item ui" data-category="ui">
+            <img src="img/code.jpg" alt="" class="grid__item code" data-category="code">
+            <img src="img/ui.jpg" alt="" class="grid__item ui" data-category="ui">
+        </div>
+    </section>
+    <section class="contacts">
+        <h2 class="contacts__title title" id="contacts">Contacts</h2>
+        <ul class="contacts__list">
+            <li class="contacts__item">Home:
+                <a href="tel:+380999999991" class="contacts__link">+380999999991</a>
+            </li>
+            <li class="contacts__item">Wokr:
+                <a href="tel:+380999999992" class="contacts__link">+380999999992</a>
+            </li>
+            <li class="contacts__item">Mobile:
+                <a href="tel:+380999999993" class="contacts__link">+380999999993</a>
+            </li>
+            <li class="contacts__item">Manager:
+                <a href="tel:+380999999994" class="contacts__link">+380999999994</a>
+            </li>
+            <li class="contacts__item">Superior:
+                <a href="tel:+380999999995" class="contacts__link">+380999999995</a>
+            </li>
+        </ul>
+    </section>
+    <section class="skills">
+        <h2 class="skills__title title" id="skills">Skills</h2>
+        <form class="skills__form form">
+            <div class="form__input-wrapper">
+                <label for="name" class="form__label">Skill name:</label>
+                <input type="text" class="form__input" id="name" placeholder="Enter skill name">
+            </div>
+            <div class="form__input-wrapper">
+                <label for="range" class="form__label">Skill range:</label>
+                <input type="text" class="form__input" id="range" placeholder="Enter skill range">
+            </div>
+            <button type="submit" class="form__submit">Add skill</button>
+        </form>
+        <div class="skills__progress progress">
+            <div class="progress__item">HTML</div>
+            <div class="progress__item">CSS</div>
+            <div class="progress__item">JS</div>
+        </div>
+        <div class="skills__rank rank">
+            <span class="rank__item rank__beginner"></span>
+            <span class="rank__item rank__w25"></span>
+            <span class="rank__item rank__proficient"></span>
+            <span class="rank__item rank__w50"></span>
+            <span class="rank__item rank__expert"></span>
+            <span class="rank__item rank__w25"></span>
+            <span class="rank__item rank__master"></span>
+        </div>
+    </section>
+    <section class="education">
+        <h2 class="education__title title" id="education">Education</h2>
+        <div class="education__data ">
+            <hr class="education__line">
+        </div>
+    </section>
+</div>
+<div class="chevron_top">
+
+    <svg aria-hidden="true" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path>
+    </svg>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#menu").on("click", "a", function (event) {
+      $(".menu__item_active").removeClass("menu__item_active")
+      $(this.parentNode).addClass("menu__item_active")
+      event.preventDefault();
+      var id = $(this).attr('href'),
+        top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+    });
+    $(".chevron_top").on("click", function (event) {
+      var self = this
+      event.preventDefault();
+      $('body,html').animate({scrollTop: 0}, 1500);
+      setTimeout(function () {
+        self.style.display = 'none'
+      }, 1600);
+    });
+    document.addEventListener("scroll", function () {
+      if(document.body.getBoundingClientRect().top < 0) {
+        $(".chevron_top").css("display", "block")
+      } else {
+        $(".chevron_top").css("display", "none")
+      }
+    })
+  });
+
+</script>
+</body>
+</html>

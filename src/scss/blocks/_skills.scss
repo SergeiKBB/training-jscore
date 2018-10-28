@@ -1,0 +1,115 @@
+.skills {
+  margin-top: 70px;
+  &__title {
+    @extend %title;
+  }
+
+  &__form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  &__rank {
+    margin-top: 30px;
+  }
+}
+
+.form {
+  padding: 15px 25px;
+  border: 1px solid $accent-color;
+
+  &__input {
+    width: 70%;
+    padding: 10px;
+    border-color: $black-20-color;
+
+    &::placeholder {
+      color: $black-20-color;
+    }
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+    }
+  }
+
+  &__label {
+    width: 30%;
+    font-weight: bold;
+  }
+
+  &__submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    background-color: $default-color;
+    color: $text-color;
+    &:hover {
+      background-color: $black-20-color;
+      color: $default-color;
+    }
+  }
+}
+
+.progress {
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: $accent-color;
+    color: $text-color;
+  }
+}
+
+.rank {
+  font-size: 0;
+  &__item {
+    position: relative;
+    display: inline-block;
+    height: 1px;
+    background-color: $grey-color;
+    font-size: 14px;
+    color: $grey-color;
+  }
+
+  &__w25 {
+    width: 25%;
+  }
+
+  &__w50 {
+    width: 49%;
+  }
+
+  &__beginner, &__proficient, &__expert, &__master {
+    height: 10px;
+    width: 1px;
+  }
+
+  &__beginner {
+    @include rank('Beginner');
+    &::before {
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__proficient {
+    @include rank('Proficient');
+  }
+
+  &__expert {
+    @include rank('Expert');
+  }
+
+  &__master {
+    @include rank('Master');
+    &::before {
+      transform: translate(-100%, -50%);
+    }
+  }
+}

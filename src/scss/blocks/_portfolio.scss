@@ -1,0 +1,30 @@
+.portfolio {
+  &__title {
+    @extend %title;
+    margin-top: 10px
+  }
+
+  &__list {
+    margin-top: 50px;
+    display: flex;
+
+    list-style: none;
+  }
+
+  &__item {
+    color:  black;
+    font-size: 20px;
+    cursor: pointer;
+    &::after {
+      content: "/";
+      margin: 0 10px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__grid {
+    margin-top: 30px;
+  }
+}

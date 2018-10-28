@@ -1,0 +1,14 @@
+@mixin rank($name) {
+  &::before {
+    content: $name;
+    position: absolute;
+    bottom: -30px;
+    transform: translate(-50%,-50%);
+  }
+}
+
+
+%title {
+  color: $accent-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,5 @@
+import './scss/style.scss'
+import './js/portfolio'
+import './js/education'
+import './js/skills'
+import './js/menu'

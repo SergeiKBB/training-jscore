@@ -1,0 +1,10 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+.checked {
+  color: $accent-color;
+  font-weight: bold;
+}
+
+:--heading {
+  margin-block: 0;
+}

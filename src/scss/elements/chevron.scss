@@ -1,0 +1,12 @@
+.chevron {
+  &_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 30px;
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+    color: $white-color;
+    background-color: $default-color;
+  }
+}
